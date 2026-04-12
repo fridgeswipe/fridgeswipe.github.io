@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Fridge Swipe</title>
+  <meta name="description" content="Fridge Swipe Terms of Service — your rights and responsibilities when using our app." />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18083764139"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18083764139');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green-deep:  #1B5E20;
+      --green-mid:   #2E7D32;
+      --green-light: #43A047;
+      --green-pale:  #E8F5E9;
+      --green-glow:  #66BB6A;
+      --white:       #ffffff;
+      --off-white:   #F9FAFB;
+      --text:        #111827;
+      --muted:       #6B7280;
+      --border:      #E5E7EB;
+      --shadow-sm:   0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text); background: var(--white);
+      line-height: 1.6; -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      height: 64px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      font-size: 20px; font-weight: 800; color: var(--green-deep);
+      letter-spacing: -.4px; display: flex; align-items: center; gap: 8px;
+    }
+    .logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--green-mid), var(--green-light));
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      font-size: 18px; box-shadow: 0 2px 8px rgba(46,125,50,.35);
+    }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500; color: var(--muted);
+      padding: 6px 14px; border-radius: 8px; transition: background .15s, color .15s;
+    }
+    .nav-links a:hover { background: var(--green-pale); color: var(--green-mid); }
+    .nav-links a.active { color: var(--green-mid); font-weight: 600; }
+    .nav-cta {
+      background: linear-gradient(135deg, var(--green-mid), var(--green-light));
+      color: var(--white) !important; border-radius: 10px !important;
+      padding: 8px 18px !important; font-weight: 600 !important;
+      box-shadow: 0 2px 8px rgba(46,125,50,.3);
+    }
+    .nav-cta:hover { background: linear-gradient(135deg, var(--green-deep), var(--green-mid)) !important; }
+
+    /* PAGE HERO */
+    .page-hero {
+      padding-top: 64px;
+      background: linear-gradient(160deg, #F1F8E9 0%, #ffffff 60%);
+      border-bottom: 1px solid var(--border);
+    }
+    .page-hero-inner { max-width: 760px; margin: 0 auto; padding: 64px 24px 48px; }
+    .page-label {
+      display: inline-block; font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1.5px; color: var(--green-mid);
+      background: var(--green-pale); padding: 6px 14px; border-radius: 100px; margin-bottom: 16px;
+    }
+    .page-title {
+      font-size: clamp(32px, 5vw, 48px); font-weight: 900;
+      letter-spacing: -1.5px; line-height: 1.1; color: var(--text); margin-bottom: 12px;
+    }
+    .page-meta { font-size: 14px; color: var(--muted); }
+
+    /* CONTENT */
+    .content-wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 100px; }
+
+    .toc {
+      background: var(--off-white); border: 1px solid var(--border);
+      border-radius: 16px; padding: 24px 28px; margin-bottom: 56px;
+    }
+    .toc h3 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 14px; }
+    .toc ol { list-style: none; counter-reset: toc; display: flex; flex-direction: column; gap: 8px; }
+    .toc li { counter-increment: toc; display: flex; align-items: center; gap: 10px; }
+    .toc li::before {
+      content: counter(toc); min-width: 22px; height: 22px; background: var(--green-pale);
+      color: var(--green-mid); font-size: 11px; font-weight: 700;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    }
+    .toc a { font-size: 14px; font-weight: 500; color: var(--text); transition: color .15s; }
+    .toc a:hover { color: var(--green-mid); }
+
+    .doc-section { margin-bottom: 56px; }
+    .doc-section:last-child { margin-bottom: 0; }
+    .section-anchor { display: block; margin-top: -88px; padding-top: 88px; visibility: hidden; }
+    .doc-section h2 {
+      font-size: 22px; font-weight: 800; letter-spacing: -.5px; color: var(--text);
+      margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--green-pale);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .doc-section h2 .sec-icon {
+      width: 36px; height: 36px; background: var(--green-pale); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0;
+    }
+    .doc-section p { font-size: 15.5px; color: #374151; line-height: 1.75; margin-bottom: 14px; }
+    .doc-section p:last-child { margin-bottom: 0; }
+    .doc-section ul { padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+    .doc-section li { font-size: 15.5px; color: #374151; line-height: 1.65; padding-left: 24px; position: relative; }
+    .doc-section ul li::before {
+      content: ''; position: absolute; left: 0; top: 10px;
+      width: 7px; height: 7px; background: var(--green-glow); border-radius: 50%;
+    }
+    .doc-section a { color: var(--green-mid); font-weight: 500; border-bottom: 1px solid #C8E6C9; transition: color .15s; }
+    .doc-section a:hover { color: var(--green-deep); }
+
+    .highlight-box {
+      background: var(--green-pale); border: 1px solid #C8E6C9;
+      border-radius: 14px; padding: 20px 22px; margin-bottom: 14px;
+    }
+    .highlight-box p { color: var(--green-deep) !important; font-weight: 500; margin-bottom: 0 !important; }
+
+    .warning-box {
+      background: #FFF8E1; border: 1px solid #FFE082;
+      border-radius: 14px; padding: 20px 22px; margin-bottom: 14px;
+    }
+    .warning-box p { color: #7B5800 !important; margin-bottom: 0 !important; }
+
+    /* FOOTER */
+    footer { background: #111827; color: rgba(255,255,255,.55); padding: 40px 24px; }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-logo { font-size: 16px; font-weight: 800; color: #fff; }
+    .footer-links { display: flex; gap: 24px; font-size: 13px; }
+    .footer-links a { color: rgba(255,255,255,.55); transition: color .15s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-copy { font-size: 13px; }
+
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">🍽️</div>
+      Fridge Swipe
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">App Store</a></li>
+      <li><a href="#">Google Play</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms-of-service.html" class="active">Terms</a></li>
+      <li><a href="#" class="nav-cta">Download Free</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <span class="page-label">Legal</span>
+    <h1 class="page-title">Terms of Service</h1>
+    <p class="page-meta">Last updated: April 2025 &nbsp;·&nbsp; Please read these terms carefully before using Fridge Swipe</p>
+  </div>
+</div>
+
+<div class="content-wrap">
+
+  <nav class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#acceptance">Acceptance of Terms</a></li>
+      <li><a href="#as-is">Service Provided As-Is</a></li>
+      <li><a href="#eligibility">Age Eligibility</a></li>
+      <li><a href="#acceptable-use">Acceptable Use</a></li>
+      <li><a href="#content">Content &amp; Intellectual Property</a></li>
+      <li><a href="#termination">Account Termination</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#governing-law">Governing Law</a></li>
+      <li><a href="#changes">Changes to Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1 -->
+  <div class="doc-section" id="acceptance">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">📄</span> Acceptance of Terms</h2>
+    <p>By downloading, installing, or using the Fridge Swipe mobile application or website (collectively, the "Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Service.</p>
+    <p>These Terms form a legally binding agreement between you and Fridge Swipe. By accessing the Service, you confirm that you have read, understood, and accepted these Terms.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="doc-section" id="as-is">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">⚙️</span> Service Provided As-Is</h2>
+    <p>The Fridge Swipe app and all related services are provided <strong>"as-is"</strong> and <strong>"as available"</strong> without warranties of any kind, either express or implied.</p>
+    <div class="warning-box">
+      <p>We do not warrant that the Service will be uninterrupted, error-free, or free of viruses or other harmful components. We do not guarantee the accuracy of AI-generated recipes, ingredient lists, or restaurant information.</p>
+    </div>
+    <ul>
+      <li>Recipe suggestions are AI-generated and should be verified before consumption, especially if you have food allergies or dietary restrictions.</li>
+      <li>Grocery price estimates are approximations and may not reflect actual retail prices.</li>
+      <li>Restaurant availability and information is sourced from third-party APIs and may not always be current.</li>
+      <li>We reserve the right to modify, suspend, or discontinue any part of the Service at any time without notice.</li>
+    </ul>
+  </div>
+
+  <!-- 3 -->
+  <div class="doc-section" id="eligibility">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">🔞</span> Age Eligibility</h2>
+    <p>You must be at least <strong>13 years of age</strong> to use Fridge Swipe. By using the Service, you represent and warrant that you meet this age requirement.</p>
+    <p>If you are between 13 and 18 years of age, you must have the consent of a parent or legal guardian to use the Service. By using the Service, you represent that you have obtained such consent.</p>
+    <p>We do not knowingly collect personal information from children under 13. If we learn that we have collected such information, we will promptly delete it.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="doc-section" id="acceptable-use">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">✅</span> Acceptable Use</h2>
+    <p>When using Fridge Swipe, you agree to:</p>
+    <ul>
+      <li>Use the Service only for its intended personal, non-commercial purpose.</li>
+      <li>Provide accurate and truthful information when creating an account.</li>
+      <li>Respect the privacy and rights of other users.</li>
+      <li>Not attempt to reverse engineer, decompile, or extract the source code of the app.</li>
+      <li>Not use the Service in any way that violates applicable local, national, or international law or regulation.</li>
+      <li>Not attempt to gain unauthorised access to any part of the Service or its related systems.</li>
+      <li>Not upload or transmit any content that is harmful, offensive, fraudulent, or infringes the rights of others.</li>
+    </ul>
+  </div>
+
+  <!-- 5 -->
+  <div class="doc-section" id="content">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">©️</span> Content &amp; Intellectual Property</h2>
+    <p>All content within the Fridge Swipe app — including but not limited to logos, branding, UI design, text, AI-generated recipes, and features — is the property of Fridge Swipe or its licensors and is protected by copyright and intellectual property law.</p>
+    <p><strong>No commercial use:</strong> You may not copy, reproduce, distribute, publish, or use any content from Fridge Swipe for commercial purposes without express written permission from us.</p>
+    <ul>
+      <li>Personal, non-commercial sharing (e.g. sharing a recipe with a friend) is permitted.</li>
+      <li>Using our branding, name, or content in third-party apps or services is not permitted without prior written consent.</li>
+      <li>Scraping or automated extraction of content from the Service is strictly prohibited.</li>
+    </ul>
+    <p>You retain ownership of any original content you submit (such as custom grocery lists or notes), but you grant us a non-exclusive licence to use such content to provide and improve the Service.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="doc-section" id="termination">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">🚫</span> Account Termination</h2>
+    <p>We reserve the right to suspend or permanently terminate your account if you violate these Terms of Service, including but not limited to:</p>
+    <ul>
+      <li>Using the Service for any commercial purpose without authorisation.</li>
+      <li>Attempting to reverse-engineer or extract source code from the app.</li>
+      <li>Engaging in fraudulent, abusive, or harassing behaviour.</li>
+      <li>Violating any applicable law or regulation while using the Service.</li>
+      <li>Creating multiple accounts to circumvent restrictions.</li>
+    </ul>
+    <p>Upon termination, your right to use the Service immediately ceases. You may also terminate your own account at any time by contacting <a href="mailto:team@fridgeswipe.com">team@fridgeswipe.com</a>.</p>
+    <div class="highlight-box">
+      <p>We will make reasonable efforts to notify you before terminating your account, except in cases of serious violations where immediate action is necessary.</p>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="doc-section" id="liability">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">⚖️</span> Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, Fridge Swipe and its team shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
+    <ul>
+      <li>Loss of data or profits resulting from use or inability to use the Service.</li>
+      <li>Adverse reactions to food prepared based on AI-generated recipes.</li>
+      <li>Inaccurate grocery price estimates or restaurant information.</li>
+      <li>Interruption or unavailability of the Service.</li>
+    </ul>
+    <p>Our total liability for any claim arising out of or relating to these Terms or the Service is limited to the amount you paid us (if any) in the 12 months preceding the claim.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="doc-section" id="governing-law">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">🇫🇮</span> Governing Law</h2>
+    <p>These Terms of Service are governed by and construed in accordance with the laws of <strong>Finland</strong>, without regard to its conflict of law provisions.</p>
+    <p>Any disputes arising from or relating to these Terms or your use of the Service shall be subject to the exclusive jurisdiction of the courts of Finland.</p>
+    <p>If you are a consumer in the European Union, you may also have rights under the consumer protection laws of your country of residence, which these Terms do not override.</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="doc-section" id="changes">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">🔄</span> Changes to Terms</h2>
+    <p>We may update these Terms from time to time to reflect changes in our Service, legal requirements, or business practices. When we make significant changes, we will:</p>
+    <ul>
+      <li>Update the "Last updated" date at the top of this page.</li>
+      <li>Notify you via in-app notification or email if the changes are material.</li>
+    </ul>
+    <p>Your continued use of the Service after changes are posted constitutes your acceptance of the updated Terms. If you do not agree to the updated Terms, you must stop using the Service.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="doc-section" id="contact">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">✉️</span> Contact</h2>
+    <p>If you have any questions about these Terms of Service or need to report a violation, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:team@fridgeswipe.com">team@fridgeswipe.com</a></li>
+    </ul>
+    <p>We aim to respond to all enquiries within 5 business days.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">🍽️ Fridge Swipe</div>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:team@fridgeswipe.com">team@fridgeswipe.com</a>
+    </div>
+    <div class="footer-copy">© 2025 Fridge Swipe. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>

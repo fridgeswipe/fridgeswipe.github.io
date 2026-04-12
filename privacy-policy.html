@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Fridge Swipe</title>
+  <meta name="description" content="Fridge Swipe Privacy Policy — how we collect, use, and protect your data." />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18083764139"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18083764139');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green-deep:  #1B5E20;
+      --green-mid:   #2E7D32;
+      --green-light: #43A047;
+      --green-pale:  #E8F5E9;
+      --green-glow:  #66BB6A;
+      --white:       #ffffff;
+      --off-white:   #F9FAFB;
+      --text:        #111827;
+      --muted:       #6B7280;
+      --border:      #E5E7EB;
+      --shadow-sm:   0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+      --shadow-md:   0 4px 20px rgba(0,0,0,.10);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      height: 64px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      font-size: 20px; font-weight: 800; color: var(--green-deep);
+      letter-spacing: -.4px; display: flex; align-items: center; gap: 8px;
+    }
+    .logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--green-mid), var(--green-light));
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      font-size: 18px; box-shadow: 0 2px 8px rgba(46,125,50,.35);
+    }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links a {
+      font-size: 14px; font-weight: 500; color: var(--muted);
+      padding: 6px 14px; border-radius: 8px; transition: background .15s, color .15s;
+    }
+    .nav-links a:hover { background: var(--green-pale); color: var(--green-mid); }
+    .nav-links a.active { color: var(--green-mid); font-weight: 600; }
+    .nav-cta {
+      background: linear-gradient(135deg, var(--green-mid), var(--green-light));
+      color: var(--white) !important; border-radius: 10px !important;
+      padding: 8px 18px !important; font-weight: 600 !important;
+      box-shadow: 0 2px 8px rgba(46,125,50,.3);
+    }
+    .nav-cta:hover { background: linear-gradient(135deg, var(--green-deep), var(--green-mid)) !important; }
+
+    /* PAGE HERO */
+    .page-hero {
+      padding-top: 64px;
+      background: linear-gradient(160deg, #F1F8E9 0%, #ffffff 60%);
+      border-bottom: 1px solid var(--border);
+    }
+    .page-hero-inner {
+      max-width: 760px; margin: 0 auto; padding: 64px 24px 48px;
+    }
+    .page-label {
+      display: inline-block; font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1.5px; color: var(--green-mid);
+      background: var(--green-pale); padding: 6px 14px; border-radius: 100px; margin-bottom: 16px;
+    }
+    .page-title {
+      font-size: clamp(32px, 5vw, 48px); font-weight: 900;
+      letter-spacing: -1.5px; line-height: 1.1; color: var(--text); margin-bottom: 12px;
+    }
+    .page-meta { font-size: 14px; color: var(--muted); }
+
+    /* CONTENT */
+    .content-wrap {
+      max-width: 760px; margin: 0 auto; padding: 56px 24px 100px;
+    }
+    .toc {
+      background: var(--off-white); border: 1px solid var(--border);
+      border-radius: 16px; padding: 24px 28px; margin-bottom: 56px;
+    }
+    .toc h3 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 14px; }
+    .toc ol { list-style: none; counter-reset: toc; display: flex; flex-direction: column; gap: 8px; }
+    .toc li { counter-increment: toc; display: flex; align-items: center; gap: 10px; }
+    .toc li::before { content: counter(toc); min-width: 22px; height: 22px; background: var(--green-pale); color: var(--green-mid); font-size: 11px; font-weight: 700; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .toc a { font-size: 14px; font-weight: 500; color: var(--text); transition: color .15s; }
+    .toc a:hover { color: var(--green-mid); }
+
+    .doc-section { margin-bottom: 56px; }
+    .doc-section:last-child { margin-bottom: 0; }
+    .section-anchor { display: block; margin-top: -88px; padding-top: 88px; visibility: hidden; }
+    .doc-section h2 {
+      font-size: 22px; font-weight: 800; letter-spacing: -.5px; color: var(--text);
+      margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--green-pale);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .doc-section h2 .sec-icon {
+      width: 36px; height: 36px; background: var(--green-pale);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0;
+    }
+    .doc-section p { font-size: 15.5px; color: #374151; line-height: 1.75; margin-bottom: 14px; }
+    .doc-section p:last-child { margin-bottom: 0; }
+    .doc-section ul, .doc-section ol { padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+    .doc-section li {
+      font-size: 15.5px; color: #374151; line-height: 1.65;
+      padding-left: 24px; position: relative;
+    }
+    .doc-section ul li::before {
+      content: ''; position: absolute; left: 0; top: 10px;
+      width: 7px; height: 7px; background: var(--green-glow); border-radius: 50%;
+    }
+    .doc-section ol { counter-reset: ol; }
+    .doc-section ol li { counter-increment: ol; }
+    .doc-section ol li::before {
+      content: counter(ol); position: absolute; left: 0; top: 1px;
+      width: 18px; height: 18px; background: var(--green-pale); color: var(--green-mid);
+      font-size: 11px; font-weight: 700; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    }
+    .doc-section a { color: var(--green-mid); font-weight: 500; border-bottom: 1px solid #C8E6C9; transition: color .15s; }
+    .doc-section a:hover { color: var(--green-deep); }
+
+    .third-party-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 4px; }
+    .third-party-card {
+      background: var(--off-white); border: 1px solid var(--border);
+      border-radius: 14px; padding: 18px 20px;
+    }
+    .third-party-card strong { display: block; font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .third-party-card span { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+    .highlight-box {
+      background: var(--green-pale); border: 1px solid #C8E6C9;
+      border-radius: 14px; padding: 20px 22px; margin-bottom: 14px;
+    }
+    .highlight-box p { color: var(--green-deep) !important; font-weight: 500; margin-bottom: 0 !important; }
+
+    /* FOOTER */
+    footer { background: #111827; color: rgba(255,255,255,.55); padding: 40px 24px; }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-logo { font-size: 16px; font-weight: 800; color: #fff; }
+    .footer-links { display: flex; gap: 24px; font-size: 13px; }
+    .footer-links a { color: rgba(255,255,255,.55); transition: color .15s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-copy { font-size: 13px; }
+
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .third-party-grid { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">🍽️</div>
+      Fridge Swipe
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">App Store</a></li>
+      <li><a href="#">Google Play</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy-policy.html" class="active">Privacy Policy</a></li>
+      <li><a href="terms-of-service.html">Terms</a></li>
+      <li><a href="#" class="nav-cta">Download Free</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <span class="page-label">Legal</span>
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="page-meta">Last updated: April 2025 &nbsp;·&nbsp; Effective immediately upon app use</p>
+  </div>
+</div>
+
+<div class="content-wrap">
+
+  <nav class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#collect">What Data We Collect</a></li>
+      <li><a href="#use">How We Use Your Data</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <div class="doc-section">
+    <p>Welcome to Fridge Swipe. We take your privacy seriously. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your personal data. By using the Fridge Swipe app or website, you agree to the practices described here.</p>
+  </div>
+
+  <!-- 1. Collect -->
+  <div class="doc-section" id="collect">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">📋</span> What Data We Collect</h2>
+    <p>We collect only the information necessary to provide and improve the Fridge Swipe experience:</p>
+    <ul>
+      <li><strong>Account information:</strong> Your email address when you create an account or sign in with a third-party provider (Google, Apple).</li>
+      <li><strong>Usage data:</strong> Features you use, recipes you swipe, meals you save, grocery lists you generate, and app session information.</li>
+      <li><strong>Device information:</strong> Device type, operating system version, unique device identifiers, and app version for debugging and compatibility purposes.</li>
+      <li><strong>Location data:</strong> Approximate or precise location, used only for the restaurant discovery feature and nearby search functionality. Location is only accessed when you use restaurant features and can be disabled in your device settings at any time.</li>
+      <li><strong>Photos:</strong> When you use the Fridge Scanner feature, photos you take are sent to our AI service for ingredient recognition. Photos are processed in real time and are not stored on our servers beyond the duration of your session.</li>
+      <li><strong>In-app behaviour:</strong> Crash logs, error reports, and performance data to help us fix bugs and improve stability.</li>
+    </ul>
+  </div>
+
+  <!-- 2. Use -->
+  <div class="doc-section" id="use">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">⚙️</span> How We Use Your Data</h2>
+    <p>We use the data we collect for the following purposes:</p>
+    <ul>
+      <li><strong>Provide app features:</strong> Powering recipe generation, grocery list building, restaurant discovery, and personalised suggestions.</li>
+      <li><strong>Improve the service:</strong> Analysing aggregated usage patterns to understand what features are most useful and where we can improve.</li>
+      <li><strong>Send notifications:</strong> With your permission, sending push notifications about new recipes, grocery list reminders, or product updates. You can opt out at any time in your device settings.</li>
+      <li><strong>Customer support:</strong> Responding to your support requests and troubleshooting issues.</li>
+      <li><strong>Legal compliance:</strong> Meeting our legal obligations under applicable law.</li>
+    </ul>
+    <p>We do <strong>not</strong> sell your personal data to third parties. We do not use your data for targeted advertising beyond the Google AdMob integration described in the Third-Party Services section.</p>
+  </div>
+
+  <!-- 3. Third party -->
+  <div class="doc-section" id="third-party">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">🔗</span> Third-Party Services</h2>
+    <p>Fridge Swipe relies on trusted third-party services to deliver its features. Each service has its own privacy policy that governs how they process your data:</p>
+    <div class="third-party-grid">
+      <div class="third-party-card">
+        <strong>Supabase</strong>
+        <span>Database and authentication provider. Stores your account data and saved preferences securely. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Privacy policy ↗</a></span>
+      </div>
+      <div class="third-party-card">
+        <strong>OpenAI</strong>
+        <span>Powers our AI recipe generation and fridge scanning features. Fridge photo data is sent to OpenAI for ingredient and recipe analysis. <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy policy ↗</a></span>
+      </div>
+      <div class="third-party-card">
+        <strong>Google Places API</strong>
+        <span>Used for the restaurant discovery and swiping features. Your location is shared with Google to fetch nearby restaurant data. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy policy ↗</a></span>
+      </div>
+      <div class="third-party-card">
+        <strong>Google AdMob</strong>
+        <span>Provides advertising in the free version of the app. AdMob may collect device identifiers and usage data for ad personalisation. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy policy ↗</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Retention -->
+  <div class="doc-section" id="retention">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">🗂️</span> Data Retention</h2>
+    <p>We retain your personal data for as long as your account remains active. This allows you to access your saved recipes, grocery lists, and preferences across sessions and devices.</p>
+    <ul>
+      <li><strong>Active accounts:</strong> Data is retained indefinitely while your account is active.</li>
+      <li><strong>Deleted accounts:</strong> Upon account deletion, all personal data is permanently removed from our systems within 30 days.</li>
+      <li><strong>Fridge scan photos:</strong> Not stored beyond the active processing session.</li>
+      <li><strong>Crash and error logs:</strong> Retained for up to 90 days for debugging purposes, then automatically deleted.</li>
+    </ul>
+  </div>
+
+  <!-- 5. Rights -->
+  <div class="doc-section" id="rights">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">✅</span> Your Rights</h2>
+    <p>You have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Access:</strong> Request a copy of all personal data we hold about you.</li>
+      <li><strong>Correction:</strong> Ask us to correct inaccurate or incomplete data.</li>
+      <li><strong>Deletion:</strong> Request deletion of your account and all associated data at any time.</li>
+      <li><strong>Portability:</strong> Request your data in a structured, machine-readable format.</li>
+      <li><strong>Opt-out of notifications:</strong> Disable push notifications at any time through your device settings.</li>
+      <li><strong>Location opt-out:</strong> Revoke location permissions at any time through your device settings; restaurant features will be unavailable.</li>
+    </ul>
+    <div class="highlight-box">
+      <p>To delete your account and all your data, or to exercise any of the rights above, contact us at <a href="mailto:team@fridgeswipe.com">team@fridgeswipe.com</a>. We will respond within 30 days.</p>
+    </div>
+  </div>
+
+  <!-- 6. Security -->
+  <div class="doc-section" id="security">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">🔒</span> Security</h2>
+    <p>We use industry-standard security measures to protect your data, including encrypted data transmission (HTTPS/TLS), secure database storage through Supabase, and access controls limiting who can view user data internally.</p>
+    <p>No method of transmission over the internet is 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee its absolute security.</p>
+  </div>
+
+  <!-- 7. Children -->
+  <div class="doc-section" id="children">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">👶</span> Children's Privacy</h2>
+    <p>Fridge Swipe is not intended for children under the age of 13. We do not knowingly collect personal data from children under 13. If you believe we have inadvertently collected data from a child, please contact us immediately at <a href="mailto:team@fridgeswipe.com">team@fridgeswipe.com</a> and we will delete it promptly.</p>
+  </div>
+
+  <!-- 8. Contact -->
+  <div class="doc-section" id="contact">
+    <span class="section-anchor"></span>
+    <h2><span class="sec-icon">✉️</span> Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy or how we handle your data, please reach out:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:team@fridgeswipe.com">team@fridgeswipe.com</a></li>
+    </ul>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the "Last updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">🍽️ Fridge Swipe</div>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:team@fridgeswipe.com">team@fridgeswipe.com</a>
+    </div>
+    <div class="footer-copy">© 2025 Fridge Swipe. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
