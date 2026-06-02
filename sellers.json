@@ -1,0 +1,12 @@
+{
+  "contact_email": "team@fridgeswipe.com",
+  "version": "1.0",
+  "sellers": [
+    {
+      "seller_id": "9734897263348382",
+      "name": "Fridge Swipe",
+      "domain": "fridgeswipe.com",
+      "seller_type": "PUBLISHER"
+    }
+  ]
+}
